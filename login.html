@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mbere Farm</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 16px;
+        }
+
+        #LOGIN {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 400px; /* Set a max width for the form */
+            background: #ffffff; /* Background for the form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        table {
+            width: 100%; /* Make table full width */
+            margin: 20px 0; /* Space above and below */
+        }
+
+        td {
+            padding: 10px; /* Space within cells */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen; /* Darker green on hover */
+        }
+
+        a {
+            color: green; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        #footer {
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px; /* Space above footer */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>MBERE FARM</h1>
+    </header>
+
+    <main id="LOGIN">
+        <h2>Login to Mbere Farm</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <p><a href="./forgot password.html">Forgot password?</a></p>
+        
+        <p>Don't have an account? <a href="./signup.html">Sign up here</a></p>
+        <br>
+        <a href="./shamba.html">Back to Home</a>
+    </main>
+
+    <footer id="footer">
+        <p>Mbere farm | &copy; 2024 | All rights reserved</p>
+    </footer>
+</body>
+</html>
