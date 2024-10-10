@@ -1,3 +1,4 @@
+
 body {
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
@@ -6,79 +7,54 @@ body {
     padding: 0;
 }
 
-#header {
-    background: green;
-    color: greenyellow;
-    padding: 12px;
-    position: relative; 
-    z-index: 1; 
-}
-
-#navigation {
-    background: green;
-    color: gold;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 1px 22px 6px;
-    display: inline-block; 
-    margin-right: 5px; 
-}
-
-#navigation:hover {
-    background: red;
-    color: greenyellow;
-}
-
-#navbar {
-    position: relative;
-    z-index: 1; 
-}
-
-#LOGIN {
-    margin-top: 20px; 
-    background: whitesmoke;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#footer {
-    background: green;
+.header {
+    background-color: green;
     color: white;
-    padding: 12px;
-    position: relative; 
+    text-align: center;
+    padding: 16px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.dropdown-button {
+    background-color: green;
+    color: gold;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background: green;
+    width: 100%;
     z-index: 1;
 }
 
-body {
-    background-color: whitesmoke;
-    margin: 0; 
-    font-family: Arial, sans-serif;
-}
-
-
-
-.welcome-section {
+.nav-link {
+    color: gold;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    padding: 20px;
 }
 
-.home-image {
-    max-width: 80%; 
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: block;
+.nav-link:hover {
+    background-color: red;
+    color: greenyellow;
 }
 
-.home-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-
+/* About & Contact Sections */
 .about, .contact {
     padding: 20px;
     margin: 20px auto;
@@ -92,7 +68,7 @@ h2, h3, h4 {
     color: brown;
 }
 
-
+/* Footer */
 .footer {
     background-color: green;
     color: white;
@@ -100,19 +76,21 @@ h2, h3, h4 {
     padding: 16px;
 }
 
-
+/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
     .navigation {
-        display: flex; 
-        flex-direction: column; 
-
-    .dropdown-button {
+        display: flex;
+        position: static; 
         width: 100%; 
+        top: 0;
+        left: 0;
+        padding: 0; 
     }
 
     .nav-link {
+        border-bottom: none; 
         padding: 10px;
-        border-bottom: none; /
+        font-size: 1em;
     }
 
     .about, .contact {
@@ -121,7 +99,6 @@ h2, h3, h4 {
     }
 
     .home-image {
-        
         max-width: 100%;
         margin: 10px auto;
     }
@@ -133,7 +110,7 @@ h2, h3, h4 {
     }
 
     .welcome-section h1 {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .about, .contact {
@@ -149,5 +126,4 @@ h2, h3, h4 {
     .footer {
         padding: 12px;
     }
-}
 }
