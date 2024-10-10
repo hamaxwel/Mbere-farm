@@ -54,7 +54,7 @@ body {
     color: greenyellow;
 }
 
-/* About & Contact Sections */
+
 .about, .contact {
     padding: 20px;
     margin: 20px auto;
@@ -68,7 +68,7 @@ h2, h3, h4 {
     color: brown;
 }
 
-/* Footer */
+
 .footer {
     background-color: green;
     color: white;
@@ -76,19 +76,17 @@ h2, h3, h4 {
     padding: 16px;
 }
 
-/* Media Queries for Smaller Screens */
+
 @media (max-width: 768px) {
     .navigation {
         display: flex;
-        position: static; 
+        position: static;
         width: 100%; 
-        top: 0;
-        left: 0;
-        padding: 0; 
+        padding: 0;
     }
 
     .nav-link {
-        border-bottom: none; 
+        border-bottom: none;
         padding: 10px;
         font-size: 1em;
     }
