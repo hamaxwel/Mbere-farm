@@ -8,27 +8,10 @@ body {
 
 #header {
     background: green;
-    color: white;
+    color: greenyellow;
     padding: 12px;
     position: relative; 
-}
-
-.navbar {
-    position:absolute;
-    right: 0;
-    top: 0;
-    margin: 20px;
-}
-
-.dropdown-button {
-    background-color: green;
-    color: gold;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 9px;
+    z-index: 1; 
 }
 
 #navigation {
@@ -38,21 +21,41 @@ body {
     text-decoration: none;
     border-radius: 1px 22px 6px;
     display: inline-block; 
-    margin-right: 0px; 
+    margin-right: 5px; 
 }
 
-.nav-link {
-    color: gold;
-    text-decoration: none;
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-link:hover {
-    background-color: red;
+#navigation:hover {
+    background: red;
     color: greenyellow;
 }
+
+#navbar {
+    position: relative;
+    z-index: 1; 
+}
+
+#LOGIN {
+    margin-top: 20px; 
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+    background: green;
+    color: white;
+    padding: 12px;
+    position: relative; 
+    z-index: 1;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
 
 
 .welcome-section {
