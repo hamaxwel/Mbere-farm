@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+
 .header {
     background-color: green;
     color: white;
@@ -14,7 +14,7 @@ body {
     padding: 16px;
 }
 
-/* Navigation */
+
 .navbar {
     position:absolute;
     right: 0;
@@ -76,11 +76,11 @@ body {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* About & Contact Sections */
+
 .about, .contact {
     padding: 20px;
     margin: 20px auto;
-    max-width: 90%; /* Better for smaller screens */
+    max-width: 90%;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,7 +90,7 @@ h2, h3, h4 {
     color: brown;
 }
 
-/* Footer */
+
 .footer {
     background-color: green;
     color: white;
@@ -98,21 +98,19 @@ h2, h3, h4 {
     padding: 16px;
 }
 
-/* Media Queries for Smaller Screens */
+
 @media (max-width: 768px) {
     .navigation {
-        display: flex; /* Display as flex for larger screens */
-        flex-direction: column; /* Stacked for dropdown */
-        padding: 0; /* Remove padding */
-    }
+        display: flex; 
+        flex-direction: column; 
 
     .dropdown-button {
-        width: 100%; /* Full width button */
+        width: 100%; 
     }
 
     .nav-link {
         padding: 10px;
-        border-bottom: none; /* Remove border for horizontal display */
+        border-bottom: none; /
     }
 
     .about, .contact {
@@ -133,12 +131,12 @@ h2, h3, h4 {
     }
 
     .welcome-section h1 {
-        font-size: 1.2em; /* Smaller heading for small screens */
+        font-size: 1.2em; 
     }
 
     .about, .contact {
         padding: 10px;
-        font-size: 0.9em; /* Adjust font size for readability */
+        font-size: 0.9em;
     }
 
     .nav-link {
@@ -149,4 +147,5 @@ h2, h3, h4 {
     .footer {
         padding: 12px;
     }
+}
 }
