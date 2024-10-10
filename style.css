@@ -6,14 +6,13 @@ body {
     padding: 0;
 }
 
-
-.header {
-    background-color: green;
+#header {
+    background: green;
     color: white;
-    text-align: center;
-    padding: 16px;
+    padding: 12px;
+    position: relative; 
+    z-index: 1;
 }
-
 
 .navbar {
     position:absolute;
@@ -33,13 +32,14 @@ body {
     margin: 10px;
 }
 
-.navigation {
-    display: flex; 
-    flex-direction: row; 
-    position: absolute; 
-    background: none;
-    width: 100%;
-    z-index: 1; 
+#navigation {
+    background: green;
+    color: gold;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 1px 22px 6px;
+    display: inline-block; 
+    margin-right: 5px; 
 }
 
 .nav-link {
